@@ -1,0 +1,15 @@
+#workflow name
+name: Test Workflow 1
+#workflow trigger
+on: workflow_dispatch
+#define the jobs within the workflow
+jobs:
+  #list of jobs
+  job-1:
+    #define the runner job will execute on
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print text
+        run: echo "hello world"
+      - name: Prunt more txt
+        run: echo "You made it to step 2 in job 1 within Test Workflow 1"
