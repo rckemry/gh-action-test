@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Print text
-        run: echo "hello world"
+        run: |
+          echo "hello"
+          echo "world"
       - name: Print more text
         run: echo "You made it to step 2 in job 1 within Test Workflow 1"
